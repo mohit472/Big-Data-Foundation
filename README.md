@@ -19,11 +19,12 @@ Apache Yarn is Hadoop's job manager.
 
 # The Data Pipeline
 Various use cases will differ however, most big data pipelines will have similar common features. For the most part they will follow the following form:
-1.Data Collection
-2.Ingestion from a data source (this may also been called the extraction phase)
-3.Transformation/Computation
-4.(Not always but most of the time) storing data
-5.Serving the data to the user
+</br>
+1.Data Collection</br>
+2.Ingestion from a data source (this may also been called the extraction phase)</br>
+3.Transformation/Computation</br>
+4.(Not always but most of the time) storing data</br>
+5.Serving the data to the user</br>
 
 # Lambda Architecture
 Lambda Architecture is having both a batch processing layer for your data and a realtime layer for your data. The realtime layer sacrifices accuracy for the sake of speed while the batch layer is perfectly accurate but slow. Periodically the batch layer updates the realtime layer. The goal of this model is to preserve overall data accurcay without scarificing speed.
